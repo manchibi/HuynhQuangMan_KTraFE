@@ -1,0 +1,192 @@
+﻿<style type="text/css">
+    body {
+        width: 1700px;
+        /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+        font-family: 'Mê Linh', sans-serif;
+        background-color: black;
+    }
+    #container{
+        background-color:white;
+        padding:5px;
+        margin:0px;
+    }
+    #topbanner {
+        
+        height:30px;
+        background-color:antiquewhite;
+        text-align: center;
+    }
+    #topbanner p{
+        font-size:12px;
+        display: inline;
+    }
+    #banner li{
+        display:inline;
+        margin-right:10px;
+    }
+    .normal{
+        text-decoration:none;
+        color:grey;
+    }
+    .link{
+        color:black;
+    }
+    #0{
+        height:50px;
+        text-align:center;
+        vertical-align: middle;
+    }
+    #banner input{
+        width:900px;
+        height:40px;
+        padding:10px;
+        border-radius:10px;
+        margin-top:10px;
+        margin-left:50px;
+        font-size:17px;
+
+    }
+    #banner button {
+        color: dodgerblue;
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+        margin-left: -5px;
+        margin-top: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #banner input::placeholder {
+        color:grey;
+        font-size:17px;
+    }
+    .b {
+        display: inline;
+        padding-right: 20px;
+        padding-left:20px;
+        font-size: 15px;
+        border-right: 1px solid lightgrey;
+    }
+    #footer{
+        background-color:aqua;
+        border:thin solid yellow;
+        border-radius:10px;
+    }
+    
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="topbanner">
+            <p style="color:red;font-size:medium" > <b>Freeship đơn từ 45k, giảm nhiều hơn cùng &nbsp;</b></p>
+            <p style="color:blue;font-size:medium"><b><i>FREESHIP &nbsp;</i></b></p>
+            <p style="color:red;font-size:medium"><b><i>XTRA</i></b></p>
+        </div>
+        <div id="banner" style="height:100px">
+            <table>
+                <tr>
+                    <td rowspan="2"><img style="height:100px" src="~/Models/IMG/Logo.png" />
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" id="search" name="search" placeholder="100% hàng thật" required />
+                            <button type="submit">Tìm kiếm</button>
+                        </form>
+                    </td>
+                    <td>
+                        <nav>
+                            <ul>
+                                <li style="font-size:20px"><a class="normal" href="#"><i class="fa-solid fa-house"></i>&nbsp;Trang chủ</a></li>
+                                <li style="font-size:20px"><a class="normal" href="#"><i class="fa-regular fa-face-smile"></i>&nbsp;Tài khoản</a></li>
+                                <li><a href="#"><i style="color:blue;" class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="0">
+                        <nav>
+                            <ul>
+                                <li><a class="normal" href="#">điện gia dụng</a></li>
+                                <li><a class="normal" href="#">xe cộ</a></li>
+                                <li><a class="normal" href="#">mẹ & bé</a></li>
+                                <li><a class="normal" href="#">khỏe đẹp</a></li>
+                                <li><a class="normal" href="#">nhà cửa</a></li>
+                                <li><a class="normal" href="#">sách</a></li>
+                                <li><a class="normal" href="#">thể thao</a></li>
+                                <li><a class="normal" href="#">oppo</a></li>
+                                <li><a class="normal" href="#">iphone 15 pro max</a></li>
+                                <li><a class="normal" href="#">iphone 14</a></li>
+                                <li><a class="normal" href="#">xiaomi a17k</a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                    <td>
+                        <nav>
+                            <ul>
+                                <li><a class="normal" href="#"><i class="fa-solid fa-location-dot"></i>&nbsp;Giao đến</a></li>
+                                <li><a class="link" href="#">Q.1,P Bến Nghé, Hồ Chí Minh</a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="underbanner">
+            <hr style="height:1px;background-color:lightgrey;margin:20px 0px 20px 0px;"/>
+            <table>
+                <tr style="height:30px;">
+                    <td>
+                        <h3 class ="b" style="color:darkblue;font-size:20px">Cam kết</h3>
+                    </td>
+                    <td>
+                        <h4 class="b"><i style="color:blue;" class="fa-solid fa-circle-check"></i>&nbsp;100% hàng thật</h4>
+                    </td>
+                    <td>
+                        <h4 class="b"><i style="color:blue;" class="fa-solid fa-dollar-sign"></i>&nbsp;Hoàn 200% nếu hàng giả</h4>
+                    </td>
+                    <td>
+                        <h4 class="b"><i style="color:blue" class="fa-solid fa-box"></i>&nbsp;30 ngày đổi trả</h4>
+                    </td>
+                    <td>
+                        <h4 class="b"><i style="color:blue" class="fa-solid fa-clock"></i>&nbsp;Giao nhanh 2h</h4>
+                    </td>
+                    <td>
+                        <h4 class="b"><i style="color:blue" class="fa-solid fa-tag"></i>&nbsp;Giá siêu rẻ</h4>
+                    </td>
+                    <td>
+                        <h4 class="b"><i style="color:blue" class="fa-solid fa-truck-fast"></i>&nbsp;Freeship mọi đơn</h4>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="container0" style="background-color:whitesmoke;margin:30px 10px 20px 90px;">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+        <div id="footer">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Thông tin liên hệ</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>23DH114456, Huỳnh Quang Mẫn</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

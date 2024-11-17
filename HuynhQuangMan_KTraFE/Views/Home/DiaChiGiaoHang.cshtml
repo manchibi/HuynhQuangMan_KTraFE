@@ -1,0 +1,124 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<style type="text/css">
+    .centered-button {
+        background: white;
+        border: medium solid black;
+        height: 60px;
+        width: 240px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius:5px;
+    }
+</style>
+<table>
+    <tr>
+        <td style="padding-left:100px;padding-top:30px">
+            <h2>2. Địa chỉ giao hàng</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-left:100px;">
+            <p style="display:inline">Bạn muốn giao hàng đến địa chỉ khác?&nbsp;</p>
+            <a style="text-decoration:none" href="#">Thêm địa chỉ giao hàng mới</a>
+        </td>
+    </tr>
+</table>
+<div style="margin-left:100px;background-color:white;border:thin solid black;border-radius:3px">
+    <table>
+        <tr style="height:70px">
+            <td style="padding-left:340px">
+                <h3>Họ tên</h3>
+            </td>
+            <td style="padding-left:100px">
+                <input style="height:50px;width:500px;border-radius:5px" type="text" id="name" placeholder="Nhập tên:" required/>
+            </td>
+
+        </tr>
+        <tr style="height:70px">
+            <td style="padding-left:340px;">
+                <h3>Điện thoại di động</h3>
+            </td>
+            <td style="padding-left:100px">
+                <input style="height: 50px; width: 500px; border-radius: 5px" type="number" id="number" placeholder="Nhập SDT" required/>
+            </td>
+
+        </tr>
+        <tr style="height:70px">
+            <td style="padding-left:340px">
+                <h3>Tỉnh/Thành phố</h3>
+            </td>
+            <td style="padding-left:100px">
+                <input style="height: 50px; width: 500px; border-radius: 5px" type="text" id="location1" placeholder="Chọn Tỉnh/Thành phố" required />
+            </td>
+
+        </tr>
+        <tr style="height:70px">
+            <td style="padding-left:340px">
+                <h3>Quận/Huyện</h3>
+            </td>
+            <td style="padding-left: 100px">
+                <input style="height: 50px; width: 500px; border-radius: 5px" type="text" id="location2" placeholder="Chọn Quận/Huyện" required />
+            </td>
+
+        </tr>
+        <tr style="height:70px">
+            <td style="padding-left:340px">
+                <h3>Phường/Xã</h3>
+            </td>
+            <td style="padding-left: 100px">
+                <input style="height: 50px; width: 500px; border-radius: 5px" type="text" id="location3" placeholder="Chọn Phường/Xã" required />
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left:340px">
+                <h3>Địa chỉ</h3>
+            </td>
+            <td style="padding-left: 100px">
+                <input style="height: 100px; width: 500px; border-radius: 5px" type="text" id="location4" placeholder="Ví dụ: 52, đường Trần Hưng Đạo" required />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><p style="padding-left: 100px;padding-top:25px"><i>Để nhập hàng thuận tiện hơn, bạn vui lòng cho Tiki biết loại địa chỉ</i></p></td>
+        </tr>
+        <tr>
+            <td style="padding-left:340px">
+                <h3>Loại địa chỉ</h3>
+            </td>
+            <td style="padding-left: 100px">
+                <form style="margin-top:20px">
+                    <label style="font-size:20px">
+                        <input type="radio" name="option1" value="option1" required>
+                     Nhà riêng/Chung cư   
+                    </label>
+                    <label style="font-size:20px;margin-left:40px">
+                        <input type="radio" name="option2" value="option2">
+                      Cơ quan/Công ty
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="padding-left: 100px">
+                <form>
+                    <label style="font-size:20px">
+                        <input type="checkbox" name="option1" value="option1" required>
+                        Sử dụng địa chỉ này làm mặc định
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="padding-left: 100px">
+                <button class="centered-button">Hủy bỏ</button>
+                <button style="margin-left:12px;background-color:blueviolet;color:white" class="centered-button">Giao đến địa chỉ này</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
